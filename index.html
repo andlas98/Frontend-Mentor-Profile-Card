@@ -9,7 +9,8 @@
   
   <title>Frontend Mentor | Profile card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -21,20 +22,21 @@
     <div class="profile_card__img_bg"></div>
     <div> <img src="images/image-victor.jpg" alt="profile_img_Victor" class="profile_card__img"></div>
    
-    <span id="profile_card__name">Victor Crest</span>
+    <span id="profile_card__name" class="big_bold_black_text">Victor Crest</span>
     <span id="profile_card__age"> 26</span>
     
     <div id="profile_card__city">London</div>
+    <hr>
     <div id="profile_card__followers_likes_section">
-      <div id="profile_card__followers"><strong>80K</strong> Followers</div>
-      <div id="profile_card__likes"><strong>803K</strong> Likes</div>
-      <div id="profile_card__photos"><strong>1.4K</strong> Photos</div>
+      <div id="profile_card__followers"><span class="big_bold_black_text">80K</span><br><span class="mini_text">Followers</span></div>
+      <div id="profile_card__likes"><span class="big_bold_black_text">803K</span><br><span class="mini_text">Likes</span></div>
+      <div id="profile_card__photos"><span class="big_bold_black_text">1.4K</span><br><span class="mini_text">Photos</span></div>
     </div>
   </div>
 
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>

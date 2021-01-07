@@ -1,38 +1,79 @@
 body{
-  background-color: aqua;
+  background-color: #22ACB6;
+  font-family: 'Kumbh Sans';
+  color: hsl(0, 0%, 59%);
 }
 
-#profile_card{
-  margin: auto; 
-  font-size: 18px;
-  background-color: #fff;
-  border-radius: 15px;
-  width: 40%;
-  text-align: center;
-}
 
 @media(max-width: 500px){
   #profile_card{
-    /* width: 375px; */
+    width: 375px !important;
   }
 }
 
+#profile_card{
+  border-radius: 15px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  background-color: #fff;
+  width: 25%;
+  text-align: center;
+  box-shadow: 1px 2px 24px 0px rgba(0,0,0,0.48);
+  -webkit-box-shadow: 1px 2px 24px 0px rgba(0,0,0,0.48);
+  -moz-box-shadow: 1px 2px 24px 0px rgba(0,0,0,0.48);
+  overflow: auto;
+}
+
 .profile_card__img_bg{
-  height: 5rem;
+  height: 8rem;
   background: url(images/bg-pattern-card.svg);
 }
 
 .profile_card__img{
   position: relative;
-  margin-top: -2.5rem;
+  margin-top: -3.5rem;
   border: 5px solid white;
   border-radius: 50%;
+  margin-bottom: 1rem;
 }
 
-#profile_card__name{
+.big_bold_black_text{
   font-weight: 700;
+  color: #000000;
+}
+
+.mini_text{
+  font-size: 0.75rem;
+  letter-spacing: 0.1rem;
 }
 
 #profile_card__city{
-  padding: 1rem 0 1rem 0;
+  padding: 1rem 0 0 0;
+}
+
+hr{
+  border-color: #d6d4d3;
+  border-top: #d6d4d3;
+  margin-block-start: 1.7rem;
+  margin-block-end: 2rem;
+}
+
+#profile_card__followers_likes_section{
+  /* margin-top: 1rem; */
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: stretch;
+  align-content: stretch;
+  padding-bottom: 1.5rem;
+  margin-right: 1rem;
+}
+#profile_card__followers_likes_section .big_bold_black_text{
+  padding-bottom: 0.5rem;
 }
